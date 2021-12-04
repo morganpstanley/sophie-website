@@ -1,0 +1,10 @@
+.App {
+  background-image: url("../src/assets/stock-photo-spanish-classic-guitar-isolated-on-the-white-background-523575322.jpg");
+  background-position: left;
+  background-size: cover;
+  height: 600vh;
+}
+
+#link-to-me {
+  top: 100vw;
+}
