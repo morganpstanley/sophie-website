@@ -1,14 +1,15 @@
 import React from "react";
+import "./Header.css"
 
-const Header = ({aboutRef, gigsRef, lessonsRef}) => {
+const Header = ({aboutRef, gigsRef, lessonsRef, contactRef}) => {
 
   const jumpToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
-    <div>
-      <h1>SOPHIE STANLEY</h1>
+    <div id="header">
+      <h1 id="logo">Sophie Stanley</h1>
       <button onClick={() => jumpToRef(aboutRef)}>
         About
       </button>
@@ -18,7 +19,7 @@ const Header = ({aboutRef, gigsRef, lessonsRef}) => {
       <button onClick={() => jumpToRef(gigsRef)}>
         Gigs
       </button>
-      <button onClick={jumpToRef}>
+      <button onClick={() => jumpToRef(contactRef)}>
         Contact
       </button>
     </div>

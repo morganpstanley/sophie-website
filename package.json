@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -34,5 +35,26 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "forms": {
+    "contact": {
+      "name": "Contact Form",
+      "fields": {
+        "email": {
+          "type": "email",
+          "required": true
+        },
+        "message": {
+          "type": "text",
+          "required": true
+        }
+      },
+      "actions": [
+        {
+          "type": "email",
+          "to": "morganpstanley@gmail.com"
+        }
+      ]
+    }
   }
 }

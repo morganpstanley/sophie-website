@@ -1,5 +1,5 @@
 .App {
-  background-image: url("../src/assets/stock-photo-spanish-classic-guitar-isolated-on-the-white-background-523575322.jpg");
+  background-image: url("../src/assets/Rodrigo3_adobespark.png");
   background-position: left;
   background-size: cover;
   height: 600vh;
@@ -7,4 +7,9 @@
 
 #link-to-me {
   top: 100vw;
+}
+
+h2 {
+  padding-top: 30px;
+  text-align: center;
 }

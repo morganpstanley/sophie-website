@@ -1,7 +1,9 @@
+import "./Lessons.css"
+
 const Lessons = ({lessonsRef}) => {
 
   return (
-    <div ref={lessonsRef}>
+    <div id="lessons" ref={lessonsRef}>
       <h2>Lessons</h2>
       <p>
         Sophie is currently on faculty at the  Gifted Music School in Salt Lake City, Utah, University of Utah and Weber State University. She also maintains an active private guitar studio in the Salt Lake area
