@@ -1,3 +1,52 @@
 #contact {
   background-color: var(--accent-color);
+  scroll-behavior: smooth;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    ". name email ."
+    ". message message ."
+    ". submit submit .";
+  justify-items: center;
+}
+
+#contact input{
+  border: none;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 25vw;
+  font-family: 'Arvo', serif;
+}
+
+#input-name {
+  grid-area: name; 
+}
+
+#input-email {
+  grid-area: email;
+}
+
+#contact textarea {
+  grid-area: message;
+  border: none;
+  resize: vertical;
+  min-height: 200px;
+  margin-bottom: 30px;
+  width: 94%;
+  padding: 3%;
+  font-family: 'Arvo', serif;
+}
+
+#contact button {
+  grid-area: submit;
+  padding: 20px 40px;
 }

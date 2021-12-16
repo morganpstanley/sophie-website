@@ -1,18 +1,28 @@
-h1 {
-  font-family: 'Comforter', cursive;
+#sig {
+  height: 150px;
+  display: block;
+}
+
+#logo-area {
+  height: 180px;
+  width: 180px;
+  background-color: white;
+  border-radius: 100%;
 }
 
 #header {
-  background-image: url("./assets/guitar-background.jpg");
-  height: 70vh;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  height: 100vh;
   position: relative;
 }
 
-#logo {
+#logo-and-nav {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: white;
+  /* mix-blend-mode: screen; */
 }

@@ -12,45 +12,33 @@ const Contact = ({contactRef}) => {
     );
   }
   return (
-    <div id="contact">
+    <div id="contact" className="block">
       <h2>Contact</h2>
       <form ref={contactRef} onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name" >
-            Name
-          </label>
+        <div className="input-area" id="input-name">
 
           <br />
 
-          <input id="name" type="name" name="name" required />
+          <input id="name" type="name" name="name" required placeholder="Name"/>
           <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
 
-        <div>
-          <label htmlFor="email" >
-            Email
-          </label>
+        <div className="input-area" id="input-email">
 
           <br />
 
-          <input id="email" type="email" name="email" required />
+          <input id="email" type="email" name="email" required placeholder="Email"/>
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
-        <div>
-          <label htmlFor="message" >
-            Message
-          </label>
+        <br />
 
-          <br />
-
-          <textarea id="message" name="message" required />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
-        </div>
+        <textarea id="message" name="message" required placeholder="Message"/>
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
 
         <button
           type="submit"

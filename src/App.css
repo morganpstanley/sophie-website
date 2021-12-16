@@ -1,15 +1,35 @@
-.App {
-  background-image: url("../src/assets/Rodrigo3_adobespark.png");
-  background-position: left;
-  background-size: cover;
-  height: 600vh;
-}
-
-#link-to-me {
-  top: 100vw;
-}
-
 h2 {
-  padding-top: 30px;
+  font-family: 'Arvo', serif;
   text-align: center;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-style: bold;
+}
+
+.block {
+  padding: 40px 140px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 25px;
+  margin: 0px 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: arvo;
+}
+
+button:hover {
+  background-color: khaki;
+}
+
+button:active {
+  background-color: rgb(204, 195, 118);
 }

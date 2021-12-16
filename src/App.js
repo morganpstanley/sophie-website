@@ -29,7 +29,7 @@ function App() {
         contactRef={contactRef}
       />
       <About aboutRef={aboutRef}/>
-      <Lessons lessonsRef={lessonsRef}/>
+      <Lessons lessonsRef={lessonsRef} contactRef={contactRef}/>
       <Gigs gigsRef={gigsRef}/>
       <Contact contactRef={contactRef}/>
 
