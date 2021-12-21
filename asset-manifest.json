@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.56cb8add.chunk.css",
-    "main.js": "./static/js/main.0ac8c1cf.chunk.js",
-    "main.js.map": "./static/js/main.0ac8c1cf.chunk.js.map",
+    "main.css": "./static/css/main.ae655a5f.chunk.css",
+    "main.js": "./static/js/main.d8dd5416.chunk.js",
+    "main.js.map": "./static/js/main.d8dd5416.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.b6ec7d79.js",
     "runtime-main.js.map": "./static/js/runtime-main.b6ec7d79.js.map",
     "static/js/2.07400778.chunk.js": "./static/js/2.07400778.chunk.js",
     "static/js/2.07400778.chunk.js.map": "./static/js/2.07400778.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.56cb8add.chunk.css.map": "./static/css/main.56cb8add.chunk.css.map",
+    "static/css/main.ae655a5f.chunk.css.map": "./static/css/main.ae655a5f.chunk.css.map",
     "static/js/2.07400778.chunk.js.LICENSE.txt": "./static/js/2.07400778.chunk.js.LICENSE.txt",
     "static/media/Blue-Wall.e5603fb8.webp": "./static/media/Blue-Wall.e5603fb8.webp",
     "static/media/bug-searching.7a043062.webp": "./static/media/bug-searching.7a043062.webp",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.b6ec7d79.js",
     "static/js/2.07400778.chunk.js",
-    "static/css/main.56cb8add.chunk.css",
-    "static/js/main.0ac8c1cf.chunk.js"
+    "static/css/main.ae655a5f.chunk.css",
+    "static/js/main.d8dd5416.chunk.js"
   ]
 }
