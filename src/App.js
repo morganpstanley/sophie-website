@@ -8,17 +8,11 @@ import Header from "./Header";
 
 
 function App() {
-
-  const audio = new Audio("/sound.wav")
   
   const aboutRef = useRef()
   const lessonsRef = useRef()
   const gigsRef = useRef()
   const contactRef = useRef()
-
-  const playAudio = () => {
-    audio.play()
-  }
 
   return (
     <div className="App">
@@ -32,8 +26,6 @@ function App() {
       <Lessons lessonsRef={lessonsRef} contactRef={contactRef}/>
       <Gigs gigsRef={gigsRef}/>
       <Contact contactRef={contactRef}/>
-
-      <button onClick={playAudio}>sound</button>
     </div>
   );
 }

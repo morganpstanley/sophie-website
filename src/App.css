@@ -1,5 +1,5 @@
 h2 {
-  font-family: 'Arvo', serif;
+  font-family: 'Josefin Slab', serif;
   text-align: center;
   font-size: 2rem;
   padding-bottom: 20px;
@@ -24,6 +24,7 @@ button {
   text-decoration: none;
   font-size: 1rem;
   font-family: arvo;
+  cursor: pointer;
 }
 
 button:hover {

@@ -1,0 +1,41 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* #repertoire-list {
+  background-image: url("./assets/paper-t.png");
+  padding: 15px 30px 30px;
+  margin: 20px auto 10px auto;
+  filter: drop-shadow(10px 10px 10px);
+  background-color: rgba(255, 255, 255, .7);
+  width: 50%;
+  border-radius: 1px;
+  position: relative;
+  height: 100%;
+  display: none;  
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+} */
+
+.composer {
+  float: right;
+}
+
+#repertoire-list.visible {
+  display: block;
+  background-color: rgb(184, 218, 255);
+  animation: showNav 1000ms linear both;
+}
+
+@keyframes showNav {
+  0% {opacity: 0;}
+  50% {height: 50%;}
+  100% {
+    opacity: 1;
+    height: auto;
+  }
+}
+

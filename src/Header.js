@@ -11,7 +11,7 @@ const Header = ({aboutRef, gigsRef, lessonsRef, contactRef}) => {
   return (
     <div id="header">
       <div id="logo-and-nav">
-        <div id="logo-area">
+        <div id="logo-box">
           <img src={logo} alt="" id="sig"/> 
         </div>
         <button onClick={() => jumpToRef(aboutRef)}>

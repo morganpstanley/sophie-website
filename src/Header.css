@@ -1,13 +1,21 @@
 #sig {
   height: 150px;
   display: block;
+  position: relative;
+  top: 15px;
+  left: 10px;
+  transform: rotate(-13deg);
+  position: absolute;
 }
 
-#logo-area {
+#logo-box {
   height: 180px;
   width: 180px;
-  background-color: white;
+  background-color: rgb(255,255,255,.6);
   border-radius: 100%;
+  position: absolute;
+  left: 57%;
+  top: -619%;
 }
 
 #header {
@@ -19,10 +27,21 @@
 
 #logo-and-nav {
   position: absolute;
-  top: 50%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.5rem;
   color: white;
-  /* mix-blend-mode: screen; */
+  mix-blend-mode: screen;
+  width: 100%;
+  text-align: center;
+}
+
+#header button {
+  background-color: rgb(255,255,255,.6);
+
+}
+
+#header button:hover {
+  background-color: rgb(255,255,255,.9);
 }
