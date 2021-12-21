@@ -2,13 +2,13 @@ import { useForm, ValidationError } from "@formspree/react";
 import "./Contact.css"
 
 const Contact = ({contactRef}) => {
-  const [state, handleSubmit] = useForm("xknpzqqj");
+  const [state, handleSubmit] = useForm("mpzbzgpl");
 
   if (state.succeeded) {
     return (
-      <p>
-        Thank you. I'll get back to you as soon as I can.
-      </p>
+      <div id="thank-you-message" ref={contactRef}>
+        Thanks! I'll get back to you as soon as I can.
+      </div>
     );
   }
   return (

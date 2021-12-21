@@ -11,11 +11,12 @@ const Lessons = ({lessonsRef, contactRef}) => {
   return (
     <div ref={lessonsRef} className="block" id="lessons" >
       <div id="lessons-block">
-        <h2>Lessons</h2>
-        <p> I am currently on faculty at the University of Utah,  Weber State University, and Gifted Music School in Salt Lake City, Utah. I also maintain an active private guitar studio in the Salt Lake area
-          I teach both classical and fingerstyle guitar, as well as ukulele and ensemble classes.</p>
+        <h2>🎶Lessons</h2>
+        <p>I am currently on faculty at Weber State University and Gifted Music School in Salt Lake City, Utah. 
+          I also maintain an active private guitar studio in the Salt Lake area. I teach both classical 
+          and fingerstyle guitar, as well as ukulele and ensemble classes. Lessons are offered Tuesday-Thursday.</p>
           
-        <p><button onClick={jumpToRef}>Contact me</button> for more information about lessons. </p>
+        <p><button onClick={jumpToRef}>Contact me</button> for more information.</p>
 
         <b>Rate: $35 per half-hour lesson</b>
       </div>
@@ -25,3 +26,5 @@ const Lessons = ({lessonsRef, contactRef}) => {
 }
 
 export default Lessons
+
+

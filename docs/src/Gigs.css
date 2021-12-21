@@ -1,8 +1,4 @@
 #gigs {
   background-color: var(--primary-color);
-}
-
-#gigs button {
-  margin: 0px;
-  padding: 0px;
+  padding-bottom: 20px;
 }

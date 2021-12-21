@@ -50,3 +50,11 @@
   grid-area: submit;
   padding: 20px 40px;
 }
+
+#thank-you-message {
+  background-color: var(--accent-color);
+  text-align: center;
+  font-size: 2rem;
+  font-family: Josefin Slab;
+  padding: 30vh;
+}

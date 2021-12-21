@@ -4,38 +4,64 @@ ul {
   padding: 0;
 }
 
-/* #repertoire-list {
-  background-image: url("./assets/paper-t.png");
-  padding: 15px 30px 30px;
-  margin: 20px auto 10px auto;
-  filter: drop-shadow(10px 10px 10px);
-  background-color: rgba(255, 255, 255, .7);
-  width: 50%;
-  border-radius: 1px;
-  position: relative;
-  height: 100%;
-  display: none;  
+#repertoire button {
+background: none;
+color: rgb(90, 90, 207);
+border: none;
+padding: 0;
+cursor: pointer;
+margin-left: 140px;
+font-family: "Eczar", serif;
+font-weight: bold;
+}
+
+#repertoire-list {
   height: 0;
   opacity: 0;
   overflow: hidden;
-} */
+}
+
+#and-more {
+  padding-top: 30px;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+}
 
 .composer {
   float: right;
 }
 
-#repertoire-list.visible {
-  display: block;
-  background-color: rgb(184, 218, 255);
-  animation: showNav 1000ms linear both;
+.song {
+  font-style: italic;
 }
 
-@keyframes showNav {
-  0% {opacity: 0;}
-  50% {height: 50%;}
-  100% {
-    opacity: 1;
-    height: auto;
-  }
+#repertoire-list.visible {
+  padding: 0px 30% 30px;
+  margin: 20px auto 0px auto;
+  height: 100%;
+  background-color: rgb(184, 218, 255);
+  width: 40%;
+  animation: showRepertoire .5s 0s forwards;
+}
+
+#repertoire-list.hidden {
+  padding: 0px 30% 0px;
+  margin: 20px auto 0px auto;
+  overflow: hidden;
+  height: 0%;
+  background-color: rgb(184, 218, 255);
+  width: 40%;
+  animation: hideRepertoire .5s 0s forwards;
+}
+
+@keyframes showRepertoire {
+  from {opacity: 1; height: 0px;}
+  to {opacity: 1; height: 900px;}
+}
+
+@keyframes hideRepertoire {
+  from {opacity: 1; height: 900px;}
+  to {opacity: 1; height: 0px; display: none;}
 }
 

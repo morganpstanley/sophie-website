@@ -1,10 +1,6 @@
-import { useState } from "react"
 import "./Gigs.css"
-import Repertoire from "./Repertoire"
 
 const Gigs = ({gigsRef}) => {
-
-  const [repertoire, toggleRepertoire] = useState(false)
 
   return (
     <div ref={gigsRef} className="block" id="gigs">
@@ -14,13 +10,6 @@ const Gigs = ({gigsRef}) => {
 
       <b>Rate: $100 per hour</b>
 
-      <br />
-
-      <button onClick={() => toggleRepertoire(!repertoire)}>Click here for my repertoire</button>
-
-      <div id="repertoire-list" className={(repertoire) ? "visible" : ""}>
-        <Repertoire />
-      </div>
     </div>
   )
 }

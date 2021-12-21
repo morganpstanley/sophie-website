@@ -19,7 +19,7 @@
 }
 
 #header {
-  background-image: url("./assets/background.jpg");
+  /* background-color: cornflowerblue; */
   background-size: cover;
   height: 100vh;
   position: relative;

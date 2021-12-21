@@ -34,3 +34,9 @@ button:hover {
 button:active {
   background-color: rgb(204, 195, 118);
 }
+
+#copyright {
+  text-align: center;
+  font-size: .8rem;
+  font-family: "Arvo";
+}

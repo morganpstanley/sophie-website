@@ -21,10 +21,10 @@ code {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(20, 20, 20);
+  background: rgb(251, 241, 228);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: khaki;
+  background: rgb(184, 218, 255);
 }
