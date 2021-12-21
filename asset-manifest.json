@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.ae42c898.chunk.css",
-    "main.js": "./static/js/main.c9a6fc85.chunk.js",
-    "main.js.map": "./static/js/main.c9a6fc85.chunk.js.map",
+    "main.js": "./static/js/main.ef889053.chunk.js",
+    "main.js.map": "./static/js/main.ef889053.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.b6ec7d79.js",
     "runtime-main.js.map": "./static/js/runtime-main.b6ec7d79.js.map",
     "static/js/2.07400778.chunk.js": "./static/js/2.07400778.chunk.js",
@@ -10,14 +10,14 @@
     "index.html": "./index.html",
     "static/css/main.ae42c898.chunk.css.map": "./static/css/main.ae42c898.chunk.css.map",
     "static/js/2.07400778.chunk.js.LICENSE.txt": "./static/js/2.07400778.chunk.js.LICENSE.txt",
-    "static/media/Blue-Wall.af514728.jpg": "./static/media/Blue-Wall.af514728.jpg",
-    "static/media/bug-searching.b6f9d7bb.JPG": "./static/media/bug-searching.b6f9d7bb.JPG",
+    "static/media/Blue-Wall.df4ea10a.webp": "./static/media/Blue-Wall.df4ea10a.webp",
+    "static/media/bug-searching.a160ab24.webp": "./static/media/bug-searching.a160ab24.webp",
     "static/media/sophie-sig.538ab0cb.png": "./static/media/sophie-sig.538ab0cb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b6ec7d79.js",
     "static/js/2.07400778.chunk.js",
     "static/css/main.ae42c898.chunk.css",
-    "static/js/main.c9a6fc85.chunk.js"
+    "static/js/main.ef889053.chunk.js"
   ]
 }
