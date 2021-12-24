@@ -1,5 +1,5 @@
 #sig {
-  height: 150px;
+  height: 204px;
   display: block;
   position: relative;
   top: 15px;
@@ -8,29 +8,36 @@
   position: absolute;
 }
 
+#guitar {
+  opacity: 40%;
+  width: 100%;
+  position: absolute;
+}
+
 #logo-box {
-  height: 180px;
-  width: 180px;
+  height: 250px;
+  width: 250px;
   background-color: rgb(255,255,255,.6);
   border-radius: 100%;
-  position: absolute;
-  left: 57%;
-  top: -619%;
+  position: relative;
+  top: -45%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
 }
 
 #header {
-  /* background-color: cornflowerblue; */
-  background-size: cover;
-  height: 100vh;
+  height: 78vh;
   position: relative;
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
 }
 
 #logo-and-nav {
   position: absolute;
-  top: 85%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.5rem;
   color: white;
   mix-blend-mode: screen;
   width: 100%;
@@ -39,9 +46,8 @@
 
 #header button {
   background-color: rgb(255,255,255,.6);
-
 }
 
 #header button:hover {
-  background-color: rgb(255,255,255,.9);
+  background-color: rgb(255,255,255,.5);
 }

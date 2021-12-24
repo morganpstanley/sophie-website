@@ -2,11 +2,6 @@ import React from "react";
 import "./Header.css"
 import logo from "./assets/sophie-sig.png"
 
-const BGCOLOR = ["cadetblue", "chocolate", "cornflowerblue", "darkseagreen", "darkkhaki", "lightslategray", "darkseagreen",
-"indianred", "rosybrown", "palevioletred", "tomato"]
-
-const R = Math.floor(Math.random() * 10)
-
 const Header = ({aboutRef, gigsRef, lessonsRef, contactRef}) => {
 
   const jumpToRef = (ref) => {
@@ -14,7 +9,7 @@ const Header = ({aboutRef, gigsRef, lessonsRef, contactRef}) => {
   }
 
   return (
-    <div id="header" style={{backgroundColor: BGCOLOR[R]}}>
+    <div id="header">
       <div id="logo-and-nav">
         <div id="logo-box">
           <img src={logo} alt="" id="sig"/> 

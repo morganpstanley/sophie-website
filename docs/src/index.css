@@ -16,7 +16,7 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 15px;
 }
 
 /* Track */
@@ -27,4 +27,46 @@ code {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(184, 218, 255);
+}
+
+.block {
+  padding: 40px 140px;
+}
+
+@media (min-width:1051px) {
+  .block {
+    padding: 40px 140px;
+  }
+}
+
+@media (max-width:1050px) {
+  .block {
+    padding: 40px 60px;
+  }
+  #repertoire button {
+    margin-left: 60px !important;
+  }
+}
+
+@media (max-width:700px) and (min-width:601px) {
+  #sophie {
+    width: 60% !important;
+    margin: 30px 100px 100px !important;
+  }
+}
+
+@media (max-width:600px) {
+  #sophie {
+    width: 90% !important;
+    margin: 20px 80px 50px 10px !important;
+  }
+}
+
+@media (max-width:1200px) {
+  #lessons-block {
+    width: 100% !important;
+  }
+  #bug-photo {
+    position: relative !important;
+  }
 }

@@ -1,4 +1,4 @@
-import sophie from "./assets/Blue-Wall.jpg"
+import sophie from "./assets/Blue-Wall.webp"
 import "./About.css"
 
 const About = ({aboutRef}) => {
