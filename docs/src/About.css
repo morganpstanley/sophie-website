@@ -4,7 +4,7 @@
   position: relative;
 }
 
-#about span {
+#upcase-letter {
   float: left;
   line-height: 85%;
   width: .7em;
@@ -18,4 +18,48 @@
   border: 10px solid white;
   transform: rotate(3deg);
   width: 40%;
+}
+
+#about button {
+  background: none;
+	color: rgb(90, 90, 207);
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  font-weight: bold;
+}
+
+#about button:hover {
+  color: rgb(54, 54, 167);
+}
+
+#show-more-span{
+  display: flex;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+#show-more-span.collapsed {
+  height: 0;
+  opacity: 0;
+  overflow: hidden; 
+  animation: hideMore .5s 0s forwards;
+}
+
+#show-more-span.expanded {
+  height: 100%;
+  animation: showMore .5s 0s forwards;
+}
+
+@keyframes showMore {
+  from {opacity: 1; height: 0px;}
+  to {opacity: 1; height: 450px;}
+}
+
+@keyframes hideMore {
+  from {opacity: 1; height: 450px;}
+  to {opacity: 1; height: 0px;}
 }

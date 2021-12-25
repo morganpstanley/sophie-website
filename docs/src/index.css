@@ -3,6 +3,12 @@ body {
   font-family: 'Eczar', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
+}
+
+body, html {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 code {
@@ -13,24 +19,6 @@ code {
 :root {
   --primary-color: rgb(253, 253, 253);
   --accent-color: rgb(251, 241, 228);
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgb(251, 241, 228);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(184, 218, 255);
-}
-
-.block {
-  padding: 40px 140px;
 }
 
 @media (min-width:1051px) {
@@ -66,7 +54,60 @@ code {
   #lessons-block {
     width: 100% !important;
   }
-  #bug-photo {
-    position: relative !important;
+}
+
+@media (max-width:800px) and (min-width:401px) {
+  #bug-photo{
+    margin-top: 30px !important;
+    width: 80% !important;
+  }
+}
+
+@media (max-width:400px) {
+  #bug-photo{
+    margin-top: 30px !important;
+    width: 140% !important;
+    position: relative;
+    left: -50px;
+  }
+}
+
+@media (max-width:1100px) { 
+  #repertoire-list {
+  padding: 0px 15% 0px !important;
+  margin: 20px auto 0px auto;
+  width: 70% !important;
+  }
+}
+
+@media (max-width:750px) and (min-width: 601px) {
+  #repertoire-list {
+    padding: 0px 15% 0px !important;
+    width: 70% !important;
+  }
+}
+
+@media (max-width:600px) {
+  #repertoire-list {
+    padding: 0px 10% 0px !important;
+    width: 80% !important;
+    font-size: .9rem;
+  }
+}
+
+@media (max-width:600px) {
+  #contact form{
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 96px 125px 3fr 71px !important;
+    grid-template-areas:
+      "name"
+      "email"
+      "message"
+      "submit" !important;
+  }
+
+  #contact input{
+    width: 70vw !important;
+    height: 30px !important;
   }
 }
