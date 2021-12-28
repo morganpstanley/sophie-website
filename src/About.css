@@ -2,6 +2,7 @@
   background-color: var(--primary-color);
   text-align: justify;
   position: relative;
+  z-index: 3;
 }
 
 #upcase-letter {
@@ -37,29 +38,29 @@
 
 #show-more-span{
   display: flex;
-  height: 0;
+  max-height: 0%;
   opacity: 0;
   overflow: hidden;
 }
 
 #show-more-span.collapsed {
-  height: 0;
+  max-height: 0%;
   opacity: 0;
   overflow: hidden; 
-  animation: hideMore .5s 0s forwards;
+  animation: hideMore 1s 0s forwards;
 }
 
 #show-more-span.expanded {
-  height: 100%;
-  animation: showMore .5s 0s forwards;
+  max-height: 100%;
+  animation: showMore 1s 0s forwards;
 }
 
 @keyframes showMore {
-  from {opacity: 1; height: 0px;}
-  to {opacity: 1; height: 100%;}
+  from {opacity: 1; max-height: 0px;}
+  to {opacity: 1; max-height: 1000px;}
 }
 
 @keyframes hideMore {
-  from {opacity: 1; height: 100%;}
-  to {opacity: 1; height: 0px;}
+  from {opacity: 1; max-height: 1000px;}
+  to {opacity: 1; max-height: 0px;}
 }

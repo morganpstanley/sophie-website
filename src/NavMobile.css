@@ -25,11 +25,11 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    background-color: rgb(255,255,255,.9);
+    background-color: rgb(251, 241, 228);
     position: absolute;
     padding: 50vw 5%;
     z-index: 2;
-    right: 0px;
+    right: -50%;
   }
 
   nav.visible {
@@ -41,7 +41,6 @@
   }
 
   @keyframes showMenu {
-    from {right: -50%;}
     to {right: 0px;}
   }
 

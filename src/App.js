@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useRef } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import ScrollToTop from "react-scroll-up"
 import About from "./About"
 import Lessons from "./Lessons"
@@ -7,15 +7,26 @@ import Gigs from "./Gigs"
 import Repertoire from './Repertoire';
 import Contact from "./Contact"
 import Header from "./Header";
+import { ReactComponent as MySVG } from "./assets/up-arrow.svg";
 
+const mediaQuery = "(min-width: 600px)";
 
 function App() {
 
-  const scrollStyleProps = {
-    fontSize: "2rem", 
-    backgroundColor: "cornflowerblue",
-    borderRadius: "30px"
-  }
+  const mql = window.matchMedia(mediaQuery);
+  const [isDesktop, setIsDesktop] = useState(mql.matches);
+
+  useEffect(() => {
+    const handleMediaChange = function (MediaQueryList) {
+      setIsDesktop(this.matches);
+    };
+    mql.addEventListener("change", handleMediaChange);
+    setIsDesktop(mql.matches);
+
+    return () => {
+      mql.removeEventListener("change", handleMediaChange);
+    };
+  }, [mql]);
   
   const aboutRef = useRef()
   const lessonsRef = useRef()
@@ -24,21 +35,20 @@ function App() {
 
   return (
     <div className="App">
-      <Header 
-        aboutRef={aboutRef} 
-        lessonsRef={lessonsRef} 
-        gigsRef={gigsRef}
-        contactRef={contactRef}
+      <Header
+        isDesktop={isDesktop} 
+        refs={{aboutRef, lessonsRef, gigsRef, contactRef}}
       />
-      <About aboutRef={aboutRef}/>
+      <About isDesktop={isDesktop} aboutRef={aboutRef}/>
       <Lessons lessonsRef={lessonsRef} contactRef={contactRef}/>
       <Gigs gigsRef={gigsRef}/>
       <Repertoire />
       <Contact contactRef={contactRef}/>
 
-      <ScrollToTop showUnder={800} duration={500} style={scrollStyleProps}>
-        <span>🔝</span>
-      </ScrollToTop>
+      <ScrollToTop  
+        showUnder={500}
+        component={<MySVG />} 
+      />
       <p id="copyright">Copyright {new Date().getFullYear()} Sophie Stanley, all rights reserved.</p>
     </div>
   );
