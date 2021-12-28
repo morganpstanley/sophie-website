@@ -56,10 +56,10 @@
 
 @keyframes showMore {
   from {opacity: 1; height: 0px;}
-  to {opacity: 1; height: 450px;}
+  to {opacity: 1; height: 100%;}
 }
 
 @keyframes hideMore {
-  from {opacity: 1; height: 450px;}
+  from {opacity: 1; height: 100%;}
   to {opacity: 1; height: 0px;}
 }

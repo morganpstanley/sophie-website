@@ -1,0 +1,43 @@
+#sig {
+  height: 204px;
+  display: block;
+  position: relative;
+  top: 15px;
+  left: 10px;
+  transform: rotate(-13deg);
+  position: absolute;
+}
+
+#guitar {
+  opacity: 40%;
+  width: 100%;
+  position: absolute;
+}
+
+#logo-box {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(255,255,255,.6);
+  border-radius: 100%;
+
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+#header {
+  height: 78vh;
+  position: relative;
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+}
+
+#header button {
+  background-color: rgb(255,255,255,.6);
+}
+
+#header button:hover {
+  background-color: rgb(255,255,255,.5);
+}

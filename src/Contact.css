@@ -58,3 +58,9 @@
   font-family: Josefin Slab;
   padding: 30vh;
 }
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 40px 20px;
+  }
+}
