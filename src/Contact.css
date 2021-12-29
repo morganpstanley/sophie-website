@@ -24,7 +24,7 @@
   padding: 20px;
   margin-bottom: 30px;
   width: 25vw;
-  font-family: 'Arvo', serif;
+  font-family: var(--ornamental-font)
 }
 
 #input-name {
@@ -43,7 +43,7 @@
   margin-bottom: 30px;
   width: 94%;
   padding: 3%;
-  font-family: 'Arvo', serif;
+  font-family: var(--ornamental-font)
 }
 
 #contact button {
@@ -51,16 +51,28 @@
   padding: 20px 40px;
 }
 
+#contact button:hover {
+  background-color: #ebebeb;
+}
+
 #thank-you-message {
   background-color: var(--accent-color);
   text-align: center;
   font-size: 2rem;
-  font-family: Josefin Slab;
+  font-family: var(--header-font);
   padding: 30vh;
 }
 
 @media (max-width: 600px) {
   #contact {
     padding: 40px 20px;
+  }
+  #contact input {
+    padding: 20px 3% !important;
+    width: 94% !important;
+  }
+
+  #contact form {
+    justify-items: inherit !important;
   }
 }

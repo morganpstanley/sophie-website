@@ -21,7 +21,7 @@ const Repertoire = () => {
           <li><span className="song">Recuerdos del Alhambra</span><span className="composer">Francisco Tárrega</span></li>
           <li><span className="song">Divagando</span><span className="composer">Domingo Semenzato</span></li>
           <li><span className="song">Romance</span><span className="composer">Anonymous</span></li>
-          <li><span className="song">El Noy de la Mare (Catalan Melody)</span><span className="composer">Traditional</span></li>
+          <li><span className="song">El Noi de la Mare (Catalan Melody)</span><span className="composer">Traditional</span></li>
           <li><span className="song">Canarios</span><span className="composer">Gaspar Sanz</span></li>
           <li><span className="song">Maria Luisa: Mazurka</span><span className="composer">Julio Sagreras</span></li>
           <li><span className="song">Estudio 6 Op. 35, No. 17</span><span className="composer">Fernando Sor</span></li>

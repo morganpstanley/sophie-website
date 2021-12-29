@@ -27,7 +27,7 @@
     width: 40%;
     background-color: rgb(251, 241, 228);
     position: absolute;
-    padding: 50vw 5%;
+    padding: 35vw 5% 60vh;
     z-index: 2;
     right: -50%;
   }

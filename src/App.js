@@ -1,13 +1,13 @@
 import './App.css';
 import React, { useRef, useState, useEffect } from "react"
-import ScrollToTop from "react-scroll-up"
+import ScrollToTop from "react-scroll-to-top"
 import About from "./About"
 import Lessons from "./Lessons"
 import Gigs from "./Gigs"
 import Repertoire from './Repertoire';
 import Contact from "./Contact"
 import Header from "./Header";
-import { ReactComponent as MySVG } from "./assets/up-arrow.svg";
+import arrow from "./assets/arrow.png"
 
 const mediaQuery = "(min-width: 600px)";
 
@@ -46,8 +46,10 @@ function App() {
       <Contact contactRef={contactRef}/>
 
       <ScrollToTop  
-        showUnder={500}
-        component={<MySVG />} 
+        smooth
+        top={700}
+        className='scroll-button'
+        component={<img src={arrow} alt="" width={40}/>}
       />
       <p id="copyright">Copyright {new Date().getFullYear()} Sophie Stanley, all rights reserved.</p>
     </div>

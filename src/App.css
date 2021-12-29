@@ -1,5 +1,5 @@
 h2 {
-  font-family: 'Josefin Slab', serif;
+  font-family: var(--header-font);
   text-align: center;
   font-size: 2rem;
   padding-bottom: 20px;
@@ -14,20 +14,36 @@ button {
   text-align: center;
   text-decoration: none;
   font-size: 1.3rem;
-  font-family: arvo;
+  font-family: var(--ornamental-font);
   cursor: pointer;
-}
-
-button:hover {
-  background-color: khaki;
-}
-
-button:active {
-  background-color: rgb(204, 195, 118);
 }
 
 #copyright {
   text-align: center;
   font-size: .8rem;
-  font-family: "Arvo";
+  font-family: var(--ornamental-font);
 }
+
+.scroll-button {
+  position: fixed;
+  right: 25px;
+  bottom: 30px;
+  background-color: cornflowerblue;
+  border-radius: 30px;
+  padding: 10px 4px;
+  z-index: 4;
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+
+  #repertoire button {
+    font-size: 1.5rem !important;
+  }
+} 

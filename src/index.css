@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Eczar', serif;
+  font-family: var(--body-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 100vw;
@@ -11,14 +11,13 @@ body, html {
   overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 :root {
   --primary-color: rgb(253, 253, 253);
   --accent-color: rgb(251, 241, 228);
+  
+  --header-font: 'Josefin Slab', serif;
+  --body-font: "Eczar", serif;
+  --ornamental-font: "Arvo", serif
 }
 
 @media (min-width:1051px) {
@@ -29,10 +28,10 @@ code {
 
 @media (max-width:1050px) {
   .block {
-    padding: 40px 60px;
+    padding: 40px 40px;
   }
   #repertoire button {
-    margin-left: 60px !important;
+    margin-left: 40px !important;
   }
 }
 
@@ -89,9 +88,9 @@ code {
 
 @media (max-width:600px) {
   #repertoire-list {
-    padding: 0px 10% 0px !important;
-    width: 80% !important;
-    font-size: .9rem;
+    padding: 0px 5% 0px !important;
+    width: 90% !important;
+    font-size: .8rem;
   }
 }
 

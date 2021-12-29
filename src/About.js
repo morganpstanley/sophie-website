@@ -6,7 +6,6 @@ import { useState } from "react"
 const About = ({isDesktop, aboutRef}) => {
 
   const [isExpanded, setIsExpanded] = useState(isDesktop)
-  console.log(isDesktop)
 
   return (
     <div ref={aboutRef} className="block" id="about">
