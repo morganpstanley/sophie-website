@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css"
-import logo from "./assets/sophie-sig.png"
+import logo from "./assets/sophie-sig2.webp"
 import NavDesktop from "./NavDesktop"
 import NavMobile from "./NavMobile"
 
