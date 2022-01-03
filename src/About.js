@@ -9,7 +9,7 @@ const About = ({isDesktop, aboutRef}) => {
 
   return (
     <div ref={aboutRef} className="block" id="about">
-      <h2>Hi, I'm Sophie!</h2>
+      <h1>Hi, I'm Sophie!</h1>
       <img src={sophie} alt="" id="sophie" />
       <p><span id="upcase-letter">I</span>
         began learning the classical guitar when I was six and first heard the Dixie Chicks. Since then, I've had many wonderful opportunities to work and perform with renowned players from around the world, including David Russell, Grisha Goryachev, Benjamin Verdery, and Ana Vidovic. I’ve also had the opportunity to perform in various venues throughout the United States and Spain. I’ve won top prizes in the Utah Symphony Youth Guild Recital, performed several Lobby Fests for the Utah Symphony, and won the Concerto Night Competition at Weber State University playing a movement from the famous Fantasia para un gentilhombre by Rodrigo.

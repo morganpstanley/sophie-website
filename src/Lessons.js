@@ -10,7 +10,7 @@ const Lessons = ({lessonsRef, contactRef}) => {
 
   return (
     <div ref={lessonsRef} className="block" id="lessons" >
-      <h2>🎶Lessons</h2>
+      <h1>🎶Lessons</h1>
       <p>I am currently on faculty at Weber State University and Gifted Music School in Salt Lake City, Utah. 
         I also maintain an active private guitar studio in the Salt Lake area. I teach both classical 
         and fingerstyle guitar, as well as ukulele and ensemble classes. Lessons are offered Tuesday-Thursday.

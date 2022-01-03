@@ -9,7 +9,7 @@ const Repertoire = () => {
     <div id="repertoire">
       <button onClick={() => toggleRepertoire(!repertoire)}>Click here for my repertoire</button>
       <div id="repertoire-list" className={`block ${repertoire ? "visible" : "hidden"}`}>
-        <h2>Repertoire</h2>
+        <h1>Repertoire</h1>
         <ul>
           <li><span className="song">Ave Maria</span><span className="composer">Schubert</span></li>
           <li><span className="song">Canon in D</span><span className="composer">Pachelbel</span></li>

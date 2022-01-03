@@ -13,7 +13,7 @@ const Contact = ({contactRef}) => {
   }
   return (
     <div id="contact" className="block">
-      <h2>Contact</h2>
+      <h1>Contact</h1>
       <form ref={contactRef} onSubmit={handleSubmit}>
         <div className="input-area" id="input-name">
 
