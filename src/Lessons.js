@@ -12,7 +12,7 @@ const Lessons = ({lessonsRef, contactRef}) => {
       <h1>🎶Lessons</h1>
       <p>I am currently on faculty at Weber State University, Brigham Young University, and the Gifted Music School in Salt Lake City, Utah. 
         I also maintain an active private guitar studio in the Salt Lake area. I teach both classical 
-        and fingerstyle guitar, as well as ukulele and ensemble classes. Private lessons are offered Wednesday-Thursday.
+        and fingerstyle guitar, as well as ukulele and ensemble classes. Private lessons are offered Wednesday-Thursday. My studio is currently full - if you would like to be added to my waitlist, please reach out.
       </p>       
       <p><button onClick={jumpToRef}>Contact me</button> for more information.</p>
       <b>Rate: $40 per half-hour lesson</b>
