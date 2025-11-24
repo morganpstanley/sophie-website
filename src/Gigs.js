@@ -8,7 +8,7 @@ const Gigs = ({gigsRef}) => {
       <p>Need a guitarist for your wedding? Need some soothing background noise at your holiday work party? 
         Contact me with any commissions or requests for your special event!</p>
 
-      <b>Rate: $100 per hour</b>
+      <b>Rate: $120 per hour</b>
 
     </div>
   )
